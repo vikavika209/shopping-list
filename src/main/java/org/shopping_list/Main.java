@@ -1,7 +1,12 @@
-package org.example;
+package org.shopping_list;
+
+import org.shopping_list.api.IDatabaseService;
+import org.shopping_list.commands.*;
+import org.shopping_list.service.DatabaseService;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ConsoleMenu menu = new ConsoleMenu();
+        menu.menuRun();
     }
 }
